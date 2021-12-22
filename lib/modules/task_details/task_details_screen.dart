@@ -43,7 +43,7 @@ class TaskDetailsScreen extends StatelessWidget {
                         width: Dimension.Size_2,
                       ),
                       Text(
-                        '${cubit.userModel!.name}' ,
+                        '${cubit.taskModel!.uplodedBy}' ,
                         style: TextStyle(
                           color: Themes.Text_Color,
                           fontSize: Dimension.Size_15,

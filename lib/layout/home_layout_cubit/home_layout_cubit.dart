@@ -129,25 +129,25 @@ class HomeLayoutCubit extends Cubit<HomeLayoutStates>{
 List<UserModel> users =[];
   void getAllUser()
   {
-    print("getAllUser ");
-
-    if(users.isEmpty) {
-      print("getAllUser ********");
+    users =[];
+      print('*********');
       FirebaseFirestore.instance
           .collection('Users')
           .get()
           .then((value) {
         value.docs.forEach((element)
         {
-          if(element.data()['uid'] != userModel!.uid) {
-            users.add(UserModel.fromJson(element.data()));
-          }
-          emit(HomeGetAllUserSuccessState());
+          if(element.data()['uid'] != uId)
+             users.add(UserModel.fromJson(element.data()));
+          print('All Users ' +element.data().toString());
+            emit(HomeGetAllUserSuccessState());
         });
       })
           .catchError((error) {
+        print('All Users Error ' +error.toString());
+
         emit(HomeGetAllUserErrorState(error.toString()));
       });
     }
-  }
+
 }

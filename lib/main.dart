@@ -23,7 +23,7 @@ void main() async{
   if (uId != null) {
     widget = const HomeLayoutScreen();
   } else {
-    widget = LoginScreen();
+    widget = SplashScreen();
   }
 
   runApp(MyApp(

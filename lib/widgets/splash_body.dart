@@ -20,7 +20,7 @@ class SplashBody extends StatelessWidget {
           Spacer(),
           Image(
             image: NetworkImage(
-              'https://restya.com/wp-content/uploads/2021/05/1_8ygFKYb0Yo6Hc-vnScGA9A.png',
+              'https://us.123rf.com/450wm/harunatsukobo/harunatsukobo1903/harunatsukobo190300002/118883341-a-creator-like-male-upper-body-in-a-panic-over-too-busy.jpg?ver=6',
             ),
           ),
         ],

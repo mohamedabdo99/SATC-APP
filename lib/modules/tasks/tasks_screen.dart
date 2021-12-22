@@ -32,6 +32,7 @@ class TasksScreen extends StatelessWidget {
               ),
               ),
             ),
+            if(cubit.tasks.isNotEmpty)
             Padding(
               padding:  EdgeInsets.all(Dimension.Size_18),
               child: ConditionalBuilder(

@@ -18,7 +18,7 @@ class AllWorkerScreen extends StatelessWidget {
         return Padding(
           padding:  EdgeInsets.all(Dimension.Size_18),
           child: ConditionalBuilder(
-            condition: cubit.tasks.isNotEmpty,
+            condition: cubit.users.isNotEmpty,
             builder: (context) => SingleChildScrollView(
               physics: BouncingScrollPhysics(),
               child: ListView.separated(

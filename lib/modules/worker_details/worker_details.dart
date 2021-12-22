@@ -8,7 +8,8 @@ import 'package:satc/widgets/build_all_worker_body.dart';
 
 class WorkerDetails extends StatelessWidget {
   final UserModel userModel;
-  const WorkerDetails({Key? key, required this.userModel}) : super(key: key);
+  final dynamic index;
+  const WorkerDetails({Key? key, required this.userModel, required this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,16 +21,8 @@ class WorkerDetails extends StatelessWidget {
           appBar: AppBar(
             elevation: 0.0,
           ),
-          body: ListView.separated(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemBuilder: (context, index) => AllWorkerBody(
-              userModel: cubit.users[index],
-            ),
-            separatorBuilder: (context, index) => SizedBox(
-              height: 10.0,
-            ),
-            itemCount: cubit.users.length,
+          body: AllWorkerBody(
+            userModel: cubit.users[index],
           ),
         );
       },
