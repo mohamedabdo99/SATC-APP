@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "308392722030",
+    "project_id": "satc-dcdee",
+    "storage_bucket": "satc-dcdee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308392722030:android:d5c617c66c8afb6b63707f",
+        "android_client_info": {
+          "package_name": "com.example.satc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308392722030-nbftie4uqbt4atn83uu86l4uiq2npidl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.satc",
+            "certificate_hash": "cac3d5f94beea04d88ef00eecce329c11e07ddec"
+          }
+        },
+        {
+          "client_id": "308392722030-hg6f85m0pap71qcbsbhtamfnerv1b1pf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_VPF3w6K-d6DGin1raP6b4wyt8YpV_J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308392722030-hg6f85m0pap71qcbsbhtamfnerv1b1pf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
